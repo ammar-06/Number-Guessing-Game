@@ -1,0 +1,18 @@
+{
+  "name": "guessing-game",
+  "version": "1.0.0",
+  "description": "A simple guessing game where users guess a number between 1 and 100.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "guessing",
+    "game",
+    "number",
+    "guess"
+  ],
+  "author": "Ammar Ahmad",
+  "dependencies": {}
+}
