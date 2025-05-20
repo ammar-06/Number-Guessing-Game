@@ -10,9 +10,9 @@ export function getHint(number) {
 
 export function playSound(type) {
   const sounds = {
-    correct: new Audio("../src/sounds/correct.mp3"),
-    wrong: new Audio("../src/sounds/wrong.mp3"),
-    gameOver: new Audio("../src/sounds/gameOver.mp3"),
+    correct: new Audio("./sounds/correct.mp3"),
+    wrong: new Audio("./sounds/wrong.mp3"),
+    gameOver: new Audio("./sounds/gameOver.mp3"),
   };
   sounds[type]?.play();
 }
