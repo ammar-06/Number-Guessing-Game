@@ -19,6 +19,7 @@ html, body {
   background-color: var(--bg-light);
   color: var(--text-light);
   transition: var(--transition);
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -27,7 +28,7 @@ body.dark {
 }
 
 .main-content {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,19 +155,27 @@ body.dark #toggleMode {
 /* Footer */
 
 .footer {
+  position: relative;
   text-align: center;
   font-size: 0.9rem;
-  border-top: 1px solid black;
-  background-color: transparent;
+  background-color: var(--bg-light);
   transition: background-color 0.3s ease;
   margin: 0;
+  padding: 0.5rem 0 0 0;
+  width: 100%;
+}
+.footer::before {
+  content: '';
+  display: block;
+  width: 400px; 
+  height: 1px;
+  background-color: var(--accent);
+  margin: 0 auto 1rem auto; 
 }
 
 body.dark .footer {
   background-color: var(--bg-dark);
   color: var(--text-dark);
-  border-top: 1px solid rgb(223, 196, 196);
-
 }
 
 
@@ -201,6 +210,8 @@ body.dark .social-links a {
     padding: 1.5rem;
     max-width: 90%;
   }
+
+
 
   h1 {
     font-size: 1.7rem;
